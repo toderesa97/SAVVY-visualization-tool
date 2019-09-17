@@ -1,6 +1,6 @@
 # Graph Visualization
 
-Welcome to this amazing app! You are going to be given thorough instructions on how to use the app to leverage its capabilities.
+Welcome to this amazing app! You are going to be given thorough instructions on how to use the app to leverage its capabilities. Go to, [SAVVY Tool](https://tymlinhart.com/savvy-tool) to try it.
 
 ## Installation
 
@@ -57,3 +57,4 @@ const dict_type_icon = {
 ```
 
 The data types defined within this file must match the ones defined within the RDF structure. **Take into account that the app internally has a case-insensitive policy.**
+
