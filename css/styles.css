@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    margin:0;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+.display-none {
+    display: none;
+
+}
+
+.display-block {
+    display: block;
+}
+
+#button-h {
+    margin-top: 10px;
+}
+
+.link{
+    stroke-width: 2px;
+    stroke: #aab1b3;
+    /* length of line, separation between two */
+    /*stroke-dasharray:5, 10;*/
+}
+
+#filter {
+    position: fixed;
+    height: 100%;
+    width: 600px;
+    background-color: #f3efef;
+    left: -600px;
+    z-index: 3;
+    transition: 1s;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#icon_f {
+    position: fixed;
+    height: 50px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    font-size : 35px;
+    z-index: 3;
+    background-color: transparent;
+}
+
+.nodetext {
+    white-space: pre-line;
+    line-height: 18px;
+}
+
+#icon_legend {
+    position: fixed;
+    height: 50px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    font-size : 35px;
+    z-index: 2;
+    background-color: transparent;
+    top: 53px;
+}
+
+#icon_legend:hover {
+    background-color: #b3b3b3;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.fa-window-close {
+    font-size: 20px;
+}
+
+
+#icon_f:hover {
+    background-color: #b3b3b3;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#search_node_icon:hover {
+    background-color: #b3b3b3;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#search_node_icon {
+    position: fixed;
+    height: 50px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    font-size : 35px;
+    z-index: 2;
+    background-color: transparent;
+    right: 0;
+}
+
+#unredo_zone {
+    position: fixed;
+    right: 400px;
+    top: 25px;
+    width: 120px;
+}
+
+#unredo_zone i {
+    font-size: 25px;
+    position: fixed;
+}
+
+#unredo_zone i.fa-save {
+    right: 460px;
+    font-size: 28px;
+    top: 22px;
+}
+
+#unredo_zone i.fa-undo {
+    right: 520px;
+}
+
+#unredo_zone i:hover {
+    font-size : 30px;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+
+#search-section {
+    position: fixed;
+    width: 400px;
+    height: 50px;
+    right: 15px;
+    top: 10px;
+}
+
+.like_link {
+    color: #23a5ff;
+}
+
+.like_link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#overlayer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    transition: 1.2s;
+    z-index: 1;
+    display: none;
+}
+
+#upload_file:hover {
+    cursor: pointer;
+}
+
+#content_filter {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.or-spacer {
+    width: 100%;
+    position: relative;
+    top: 15px;
+}
+.or-spacer .mask {
+    overflow: hidden;
+    height: 20px;
+}
+.or-spacer .mask:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px black;
+}
+
+#triple-info-i:hover {
+    color: #a2a2a2;
+    cursor: pointer;
+}
+
+.btn-link {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.card-body {
+    position: relative;
+}
+
+.alert {
+    z-index: 1;
+}
+
+
+h5.mb-0:hover {
+    background-color: #b3b3b3;
+}
+
+.card-header {
+    padding: 0;
+}
+
+.or-spacer span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -25px;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px #999;
+    background: white;
+    padding-top: 25px;
+}
+.or-spacer span i {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 100%;
+    border: 1px dashed #aaa;
+    text-align: center;
+    line-height: 40px;
+    font-style: normal;
+    color: #999;
+}
+
+#button-info {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#button-info .fas.fa-question-circle {
+    font-size : 25px;
+}
+
+#zoom-section {
+    position: fixed;
+    right: 572px;
+    top: 18px;
+}
+
+#zoom-section .fas {
+    font-size : 38px;
+}
+
+/***************** TOGGLE CSS ********************/
+
+#toggle-section a {
+    text-decoration: none;
+    opacity: .6;
+    padding: 60px;
+    font-weight: bolder;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 1.4em;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+#toggle-section {
+    width: 250px;
+    height: 36px;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.inner-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: inherit;
+    height: inherit;
+    text-transform: uppercase;
+    font-size: .6em;
+    letter-spacing: .2em;
+}
+
+.inner-container:first-child {
+    background: #e9e9e9;
+    color: black;
+}
+
+.inner-container:nth-child(2) {
+    background: dodgerblue;
+    color: white;
+    clip-path: inset(0 50% 0 0);
+    transition: .3s cubic-bezier(0,0,0,1);
+}
+
+.toggle {
+    width: 50%;
+    position: absolute;
+    height: inherit;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.toggle p {
+    margin: auto;
+}
+
+.toggle:nth-child(1) {
+    right: 0;
+}
+
+/*********** LEGEND CSS ************************/
+
+#legend-section {
+    position: fixed;
+    width: 300px;
+    height: 360px;
+    bottom: -360px;
+    transition: 1s;
+    background-color: transparent;
+    z-index: 2;
+}
+
+#legend {
+    overflow: auto;
+    max-height: 750px;
+}
+
+/*#icon_legend {
+    z-index: 1;
+}*/
+
+#dummy_div_close {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.legend-item:hover {
+    cursor: pointer;
+}
+
+/************ FILE READER ************************/
+
+#progress_bar {
+    margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #000;
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+}
+#progress_bar.loading {
+    opacity: 1.0;
+}
+#progress_bar .percent {
+    background-color: #99ccff;
+    height: auto;
+    width: 0;
+}
+
+/************* DETECTED TYPES SECTION ***************/
+
+.detected-types-class {
+    /*display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: space-around;*/
+}
+
+.sp-replacer {
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sp-preview {
+    width: 50px;
+}
+
+.detected-types-class .text {
+    padding: 5px;
+    text-transform: capitalize;
+    font-family: "Whitney SSm A", "Whitney SSm B", "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+}
+
+#persistent-button-zone {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.custom-btn {
+    background-color: #7dc004;
+    border: none;
+    margin-right: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-btn:hover {
+    opacity: 0.8;
+}
+
+/*********************** ACCORDION DESCRIPTION ************************/
+
+.accordion-description {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: transparent;
+    z-index: 2;
+}
+
+.accordion-description .icon {
+    position: absolute;
+    font-size: 35px;
+    z-index: 1;
+    padding: 15px;
+    font-weight: bold;
+    right: 15px;
+}
+
+/************ MEDIA QUERIES **********************/
+@media only screen and (max-width: 600px) {
+    #filter {
+        width: 100%;
+    }
+
+    #search-section {
+        top: 50px;
+        width: 91%;
+    }
+
+    #unredo_zone i.fa-save {
+        top: 15px;
+        right: 100px;
+    }
+
+    #unredo_zone i.fa-undo {
+        top: 15px;
+        right: 145px;
+    }
+
+    #toggle-section {
+        margin-top: -95px;
+        margin-left: 55px;
+    }
+}
